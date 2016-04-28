@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#9c27b0"
+    tools:context="com.example.matrix.xando.Menu">
+
+    <TableLayout
+        android:orientation="vertical"
+        android:id="@+id/central"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin = "8dp"
+            android:text="New Game"
+            android:background="@color/orangeDown"
+            android:textColor="@color/whiteText"
+            android:textSize="30sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAllCaps="false"
+            android:id="@+id/butn_NewGame"
+            android:onClick="newGame"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin = "8dp"
+            android:text="Rename Players"
+            android:background="@color/orangeDown"
+            android:textColor="@color/whiteText"
+            android:textSize="30sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAllCaps="false"
+            android:id="@+id/butn_Rename"
+            android:onClick="clickRename"
+            android:layout_below="@+id/central"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin = "8dp"
+            android:text="Exit"
+            android:background="@color/orangeDown"
+            android:textColor="@color/whiteText"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:id="@+id/butn_Exit"
+            android:onClick="Exit"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@+id/central"
+            android:layout_alignParentStart="true" />
+
+    </TableLayout>
+
+</RelativeLayout>
